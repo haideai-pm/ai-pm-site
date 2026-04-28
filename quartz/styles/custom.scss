@@ -1,3 +1,77 @@
 @use "./base.scss";
 
+/* 页面整体阅读体验 */
+body {
+  letter-spacing: 0.01em;
+}
+
+/* 文章主体宽度和行距 */
+article {
+  line-height: 1.78;
+}
+
+/* 标题更有层次 */
+article h1 {
+  font-size: 2.1rem;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.2rem;
+}
+
+article h2 {
+  margin-top: 2.4rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--lightgray);
+}
+
+article h3 {
+  margin-top: 1.8rem;
+}
+
+/* 链接更像产品作品集风格 */
+a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+/* 代码块更柔和 */
+pre {
+  border-radius: 12px;
+  border: 1px solid var(--lightgray);
+}
+
+/* 图片更适合作品展示 */
+article img {
+  border-radius: 14px;
+  border: 1px solid var(--lightgray);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+/* 引用块适合写产品观点 */
+blockquote {
+  border-left: 4px solid var(--secondary);
+  background: var(--highlight);
+  padding: 0.8rem 1rem;
+  border-radius: 0 12px 12px 0;
+}
+
+/* 首页和文章列表的卡片感 */
+.section-li {
+  border: 1px solid var(--lightgray);
+  border-radius: 14px;
+  padding: 0.9rem 1rem;
+  margin-bottom: 0.8rem;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.section-li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
+}
+
+/* 标签更像产品分类 */
+.tags a {
+  border-radius: 999px;
+  padding: 0.18rem 0.55rem;
+  background: var(--highlight);
+}
 // put your custom CSS here!
