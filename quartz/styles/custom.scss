@@ -91,4 +91,39 @@ article a.internal:hover {
   color: var(--secondary);
 }
 
-// put your custom CSS here!
+/* 一级标题颜色改成和二级标题一致 */
+article h1 {
+  color: var(--dark);
+  border-bottom: none;
+}
+
+/* 二级标题保持统一视觉 */
+article h2 {
+  color: var(--dark);
+}
+
+/* 首页正文中的内部链接去掉浅蓝底色和下划线 */
+article a.internal {
+  background: transparent !important;
+  text-decoration: none !important;
+  padding: 0;
+  border-radius: 0;
+}
+
+/* 悬停时也不要底色和下划线 */
+article a.internal:hover {
+  background: transparent !important;
+  text-decoration: none !important;
+  color: var(--secondary);
+}
+
+/* 如果普通链接也想去掉下划线，可一起处理 */
+article a {
+  text-decoration: none;
+}
+
+/* 隐藏底部 Quartz 脚注 */
+footer {
+  display: none !important;
+}
+
