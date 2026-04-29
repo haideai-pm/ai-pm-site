@@ -74,4 +74,21 @@ blockquote {
   padding: 0.18rem 0.55rem;
   background: var(--highlight);
 }
+
+/* 去掉文章正文中内部链接的浅蓝色底色 */
+article a.internal {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+/* 鼠标悬停时只改变文字颜色，不加底色 */
+article a.internal:hover {
+  background: transparent;
+  color: var(--secondary);
+}
+
 // put your custom CSS here!
